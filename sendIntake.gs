@@ -447,6 +447,7 @@ const AppbuilderAPIPostRequest = ({clients, ...intake}) => {
 
   // Prepare Billing Account
   data.BillingAccount.Type = "Client";
+  data.BillingAccount["Emergency Email"] = intake.emergencyEmail;
   switch(intake["billTo"]) {
     case "First Partner":
     case "Parent/Guardian 1":
